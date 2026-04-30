@@ -458,6 +458,13 @@ body {
     margin-bottom: 16px;
 }
 
+.pricing-note {
+    font-size: 13px;
+    color: var(--text-muted);
+    font-style: italic;
+    margin-top: 8px;
+}
+
 .pricing-price {
     display: flex;
     align-items: baseline;
