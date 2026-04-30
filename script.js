@@ -1,3 +1,19 @@
+// FAQ Accordion Toggle
+function toggleFaq(button) {
+    const faqItem = button.parentElement;
+    const isActive = faqItem.classList.contains('active');
+    
+    // Close all other FAQs
+    document.querySelectorAll('.faq-item').forEach(item => {
+        item.classList.remove('active');
+    });
+    
+    // Toggle current if it wasn't active
+    if (!isActive) {
+        faqItem.classList.add('active');
+    }
+}
+
 // Smooth scrolling for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {

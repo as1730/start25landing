@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>start25 - Minimal Study Companion</title>
+    <title>start25 - Focus Timer & Study Companion</title>
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%231a1a1a'/%3E%3Ctext x='50' y='70' font-family='Inter, -apple-system, sans-serif' font-size='46' font-weight='800' text-anchor='middle' fill='%23ffffff'%3E25%3C/text%3E%3C/svg%3E">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,73 +14,75 @@
     <!-- Navigation -->
     <nav class="nav">
         <div class="nav-container">
-            <a href="index.html" class="nav-logo">start25</a>
-            <a href="https://start25.vercel.app/" class="nav-cta">Get Started</a>
+            <div class="nav-left">
+                <a href="index.html" class="nav-logo">
+                    <span class="logo-text">start</span><span class="logo-num">25</span>
+                </a>
+                <div class="nav-links">
+                    <a href="#features">Features</a>
+                    <a href="#how-it-works">How It Works</a>
+                    <a href="#faq">FAQ</a>
+                </div>
+            </div>
+            <div class="nav-right">
+                <a href="https://start25.vercel.app/" class="btn btn-open">Open App</a>
+            </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section class="hero">
         <div class="container">
-            <h1 class="hero-title">Minimal Study Companion</h1>
-            <p class="hero-subtitle">Organize subjects, track progress, and stay focused. No bloat, just what you need to study smarter.</p>
-            <a href="https://start25.vercel.app/" class="btn btn-primary btn-large">Start Studying Free</a>
+            <span class="hero-badge">STUDY COMPANION</span>
+            <h1 class="hero-title">Focus Timer & Study Organizer for Students</h1>
+            <p class="hero-subtitle">The minimal study companion that helps you stay focused, organize materials, and track progress. No bloat, no distractions—just effective studying.</p>
+            <div class="hero-ctas">
+                <a href="https://start25.vercel.app/" class="btn btn-primary btn-large">Start Studying Free</a>
+            </div>
             
-            <ul class="hero-features">
-                <li>
-                    <span class="check">✓</span>
-                    <strong>25-Minute Focus Timer</strong> — Built-in Pomodoro timer to maintain concentration and track study sessions
-                </li>
-                <li>
-                    <span class="check">✓</span>
-                    <strong>Subject Organization</strong> — Keep all your study materials, PDFs, and notes organized in one place
-                </li>
-                <li>
-                    <span class="check">✓</span>
-                    <strong>Progress Tracking</strong> — Earn XP, level up, and visualize your study habits over time
-                </li>
-                <li>
-                    <span class="check">✓</span>
-                    <strong>Flashcards & Quizzes</strong> — Create study cards and test yourself with generated quizzes
-                </li>
-                <li>
-                    <span class="check">✓</span>
-                    <strong>Completely Free</strong> — No ads, no subscriptions, no data selling. Just a simple study tool.
-                </li>
-            </ul>
+            <!-- Hero Visual -->
+            <div class="hero-demo">
+                <div class="demo-card">
+                    <div class="demo-timer">
+                        <svg viewBox="0 0 120 120" class="demo-ring">
+                            <circle cx="60" cy="60" r="54" fill="none" stroke="#e5e7eb" stroke-width="3"/>
+                            <circle cx="60" cy="60" r="54" fill="none" stroke="#10b981" stroke-width="3" stroke-dasharray="339" stroke-dashoffset="85" stroke-linecap="round"/>
+                        </svg>
+                        <div class="demo-time">25:00</div>
+                        <div class="demo-label">Focus Session</div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Features Section -->
     <section id="features" class="features">
         <div class="container">
-            <h2>Everything You Need</h2>
-            <p class="section-intro">Simple tools that actually help you learn. No distractions, no unnecessary features.</p>
+            <h2 class="section-title">Key Features</h2>
+            <p class="section-subtitle">Everything you need to study effectively, nothing you don't.</p>
             
-            <div class="features-list">
-                <div class="feature-item">
-                    <h3>Focus Sessions</h3>
-                    <p>Our 25-minute timer helps you study with intention. Track completed sessions, build streaks, and develop better study habits over time.</p>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                    </div>
+                    <h3>25-Minute Focus Timer</h3>
+                    <p>Built-in Pomodoro timer with visual progress ring. Stay focused for 25 minutes, then take a break. Track completed sessions and build streaks.</p>
                 </div>
-                <div class="feature-item">
-                    <h3>Subject Management</h3>
-                    <p>Create subjects for each class or topic. Upload PDFs, add YouTube videos, paste text notes. Everything stays organized and accessible.</p>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+                    </div>
+                    <h3>Subject Organization</h3>
+                    <p>Create subjects for each class or topic. Upload PDFs, paste notes, link YouTube videos. Keep everything organized and accessible in one place.</p>
                 </div>
-                <div class="feature-item">
-                    <h3>Flashcards</h3>
-                    <p>Create flashcards from your materials. Review them anytime, track which ones you know, and focus on what needs more practice.</p>
-                </div>
-                <div class="feature-item">
-                    <h3>Quiz Mode</h3>
-                    <p>Generate quizzes from your study materials. Test your knowledge, identify weak areas, and focus your study time where it matters.</p>
-                </div>
-                <div class="feature-item">
-                    <h3>Progress Tracking</h3>
-                    <p>Watch your XP grow as you study. Level up, maintain streaks, and see your progress with simple, motivating visualizations.</p>
-                </div>
-                <div class="feature-item">
-                    <h3>Leaderboard</h3>
-                    <p>Optional leaderboard to compete with friends and other students. Stay motivated by seeing how you rank.</p>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    </div>
+                    <h3>Progress & XP</h3>
+                    <p>Earn XP for every study session. Level up as you progress, maintain streaks, and visualize your study habits with simple charts.</p>
                 </div>
             </div>
         </div>
@@ -89,24 +91,24 @@
     <!-- How It Works Section -->
     <section id="how-it-works" class="how-it-works">
         <div class="container">
-            <h2>How It Works</h2>
-            <p class="section-intro">Get started in three simple steps. No setup required.</p>
+            <h2 class="section-title">How It Works</h2>
+            <p class="section-subtitle">Get started in three simple steps.</p>
             
-            <div class="steps-simple">
-                <div class="step-item">
-                    <span class="step-num">1</span>
-                    <h4>Add Your Subjects</h4>
-                    <p>Create a subject for each class or topic you're studying.</p>
+            <div class="steps-grid">
+                <div class="step">
+                    <div class="step-icon">1</div>
+                    <h4>Create Subjects</h4>
+                    <p>Add subjects for each class or topic you're studying. Organize by category.</p>
                 </div>
-                <div class="step-item">
-                    <span class="step-num">2</span>
-                    <h4>Upload Materials</h4>
-                    <p>Add PDFs, paste notes, or link YouTube videos.</p>
+                <div class="step">
+                    <div class="step-icon">2</div>
+                    <h4>Add Materials</h4>
+                    <p>Upload PDFs, paste notes, or link videos. Everything stays in one place.</p>
                 </div>
-                <div class="step-item">
-                    <span class="step-num">3</span>
-                    <h4>Start Studying</h4>
-                    <p>Use the focus timer, create flashcards, and track your progress.</p>
+                <div class="step">
+                    <div class="step-icon">3</div>
+                    <h4>Start Focusing</h4>
+                    <p>Use the 25-minute timer, create flashcards, and track your progress.</p>
                 </div>
             </div>
         </div>
@@ -115,28 +117,109 @@
     <!-- CTA Section -->
     <section class="cta">
         <div class="container">
-            <h2>Ready to Study Smarter?</h2>
-            <p>Join thousands of students using start25 to organize their studies and build better habits.</p>
-            <a href="https://start25.vercel.app/" class="btn btn-primary btn-large">Start Studying Free</a>
+            <div class="cta-card">
+                <div class="cta-visual">
+                    <div class="cta-shapes">
+                        <div class="shape shape-1">📚</div>
+                        <div class="shape shape-2">⏱️</div>
+                        <div class="shape shape-3">📊</div>
+                    </div>
+                </div>
+                <h2>Ready to Study Smarter?</h2>
+                <p>Join thousands of students using start25 to organize their studies and build better habits. Completely free.</p>
+                <a href="https://start25.vercel.app/" class="btn btn-white btn-large">Start Studying Free</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>Is start25 completely free?</span>
+                        <span class="faq-plus">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, start25 is 100% free. No ads, no subscriptions, no hidden fees. We believe study tools should be accessible to everyone.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>How does the focus timer work?</span>
+                        <span class="faq-plus">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>The timer uses the Pomodoro technique. Set a 25-minute focus session, work on your studies, then take a 5-minute break. After 4 sessions, take a longer 15-minute break.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>Can I use it on my phone?</span>
+                        <span class="faq-plus">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, start25 works on any device with a web browser. Use it on your phone, tablet, or computer. Your data syncs across devices when you sign in.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>Is my data safe?</span>
+                        <span class="faq-plus">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes. Your data is stored securely and never sold to third parties. You can export or delete your data at any time.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>What file types can I upload?</span>
+                        <span class="faq-plus">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Currently supports PDFs, images, and text notes. You can also link YouTube videos for easy access to video lectures.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
+            <div class="footer-main">
                 <div class="footer-brand">
-                    <a href="index.html" class="footer-logo">start25</a>
-                    <p>Your minimal study companion.</p>
+                    <a href="index.html" class="footer-logo">
+                        <span class="logo-text">start</span><span class="logo-num">25</span>
+                    </a>
+                    <p class="footer-tagline">One-click solution for your study sessions.</p>
                 </div>
-                <div class="footer-links">
-                    <a href="privacy.html">Privacy</a>
-                    <a href="terms.html">Terms</a>
-                    <a href="https://start25.vercel.app/">App</a>
+                <div class="footer-columns">
+                    <div class="footer-col">
+                        <h4>Product</h4>
+                        <a href="#features">Features</a>
+                        <a href="#how-it-works">How It Works</a>
+                        <a href="https://start25.vercel.app/">Open App</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Resources</h4>
+                        <a href="#faq">FAQ</a>
+                        <a href="privacy.html">Privacy Policy</a>
+                        <a href="terms.html">Terms of Use</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Connect</h4>
+                        <a href="#">Support</a>
+                        <a href="#">Feedback</a>
+                        <a href="#">Status</a>
+                    </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 start25. All rights reserved.</p>
+                <p>&copy; 2024-2026 start25. All rights reserved.</p>
             </div>
         </div>
     </footer>
