@@ -7,11 +7,11 @@
 :root {
     --primary: #1a1a1a;
     --primary-light: #374151;
-    --accent: #10b981;
-    --accent-light: #d1fae5;
+    --accent: #2563eb;
+    --accent-light: #dbeafe;
     --bg: #ffffff;
     --bg-alt: #f9fafb;
-    --bg-green: #f0fdf4;
+    --bg-accent: #eff6ff;
     --text: #111827;
     --text-muted: #6b7280;
     --border: #e5e7eb;
@@ -81,6 +81,24 @@ body {
 }
 
 .nav-links a:hover {
+    color: var(--text);
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.nav-link {
+    color: var(--text-muted);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    transition: color 0.2s;
+}
+
+.nav-link:hover {
     color: var(--text);
 }
 
@@ -338,7 +356,7 @@ body {
 }
 
 .cta-card {
-    background: var(--bg-green);
+    background: var(--bg-accent);
     border-radius: 24px;
     padding: 64px;
     text-align: center;
@@ -403,7 +421,7 @@ body {
 
 .pricing-card.popular {
     border: 2px solid var(--accent);
-    box-shadow: 0 20px 40px -10px rgba(16, 185, 129, 0.15);
+    box-shadow: 0 20px 40px -10px rgba(37, 99, 235, 0.15);
 }
 
 .popular-badge {
