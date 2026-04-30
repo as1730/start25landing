@@ -373,6 +373,77 @@ body {
     margin-bottom: 32px;
 }
 
+/* Pricing Section */
+.pricing {
+    padding: 100px 0;
+    background: var(--bg-alt);
+    border-top: 1px solid var(--border);
+}
+
+.pricing-card {
+    background: white;
+    border-radius: 20px;
+    padding: 48px;
+    max-width: 480px;
+    margin: 0 auto;
+    border: 2px solid var(--accent);
+    box-shadow: 0 20px 40px -10px rgba(16, 185, 129, 0.15);
+}
+
+.pricing-header {
+    text-align: center;
+    margin-bottom: 32px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--border);
+}
+
+.pricing-header h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--accent);
+    margin-bottom: 8px;
+}
+
+.pricing-price {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 4px;
+}
+
+.price {
+    font-size: 56px;
+    font-weight: 800;
+    color: var(--text);
+}
+
+.period {
+    font-size: 18px;
+    color: var(--text-muted);
+}
+
+.pricing-features {
+    margin-bottom: 32px;
+}
+
+.pricing-feature {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 0;
+    color: var(--text);
+    font-size: 15px;
+}
+
+.pricing-feature svg {
+    color: var(--accent);
+    flex-shrink: 0;
+}
+
+.btn-full {
+    width: 100%;
+}
+
 /* FAQ Section */
 .faq {
     padding: 100px 0;
